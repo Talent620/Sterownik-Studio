@@ -12,6 +12,8 @@ Windows może pokazać ostrzeżenie SmartScreen, ponieważ instalator nie ma jes
 
 ## Suma kontrolna
 
+`4f1c68b8c145203c927f3dea29419137f28927ef0309ca3665dc57eaa951513b`
+
 Porównaj SHA-256 pliku z wartością w `SHA256SUMS.txt` dołączonym do wydania.
 
 ## Ważne
