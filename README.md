@@ -1,21 +1,31 @@
-# Sterownik Studio 1.8.0 — instalator Windows
+# Sterownik Studio
 
-Instrukcja dla Basi. To wydanie pilotażowe po teście instalacji na Windows GitHub Actions. Wymaga Windows 10/11 x64.
+**Obróbka zdjęć produktowych z AI — od materiału źródłowego do sprawdzonego eksportu.**
 
-## Instalacja
+[Opis projektu w portfolio](https://github.com/Talent620/Talent620/blob/main/projects/sterownik-studio.md) · [Wydania Windows](https://github.com/Talent620/Sterownik-Studio/releases) · [Portfolio autora](https://github.com/Talent620)
 
-1. Pobierz `Sterownik-Studio-Setup-1.8.0.exe` z zakładki **Assets** wydania.
-2. Uruchom plik i przejdź przez instalator. Nie trzeba instalować Node, Pythona ani Gita.
-3. Otwórz skrót **Sterownik Studio**. Program uruchomi bazę, kolejkę i panel w przeglądarce.
+Sterownik Studio to aplikacja Windows do retuszu zdjęć produktowych z porównaniem wyniku z oryginałem. Kontrola obejmuje zachowanie numerów, etykiet, kodów i widocznych cech produktu. Niepewny wynik blokuje automatyczny eksport; zdjęcie należy również obejrzeć obok źródła.
 
-Windows może pokazać ostrzeżenie SmartScreen, ponieważ instalator nie ma jeszcze podpisu cyfrowego. Uruchom go tylko po sprawdzeniu sumy SHA-256 poniżej.
+## Jak wygląda praca
 
-## Suma kontrolna
+**Dodaj zdjęcia → obróbka AI → kontrola → porównanie → eksport.**
 
-`4f1c68b8c145203c927f3dea29419137f28927ef0309ca3665dc57eaa951513b`
+Program łączy panel pracy, obsługę zadań i konfigurację integracji AI. Publiczne repozytorium udostępnia instalatory i instrukcje; kod źródłowy jest utrzymywany oddzielnie.
 
-Porównaj SHA-256 pliku z wartością w `SHA256SUMS.txt` dołączonym do wydania.
+## Instalacja Windows
 
-## Ważne
+Prezentowane wydanie: **1.9.4, Windows x64**.
 
-To wydanie jest pilotażowe, nie oznaczamy go jako produkcyjnie zweryfikowanego. Dane pozostają na komputerze firmy. W razie problemu skontaktuj się z osobą administrującą programem.
+1. Otwórz [wydanie 1.9.4](https://github.com/Talent620/Sterownik-Studio/releases/tag/v1.9.4).
+2. Pobierz `Sterownik-Studio-Setup-1.9.4.exe`, instrukcję `INSTRUKCJA-WINDOWS-CODEX-1.9.4.md` i plik `SHA256SUMS-1.9.4.txt`.
+3. Porównaj SHA-256 instalatora z wartością w pliku sum. Instalator nie ma podpisu Authenticode.
+4. Zainstaluj program i otwórz Sterownik Studio z menu Start. Nie trzeba osobno instalować Node.js ani npm.
+5. Zgodnie z instrukcją wydania skonfiguruj logowanie silnika retuszu i klucz API do analizy oraz kontroli zdjęć.
+
+Logowanie i dostęp API to osobne elementy konfiguracji. Płatne operacje wymagają konta użytkownika i dostępnych środków zgodnie z warunkami wybranego dostawcy.
+
+## Co potwierdzono
+
+Opis wydania 1.9.4 odnotowuje weryfikację budowania i instalacji, uruchomienia backendu i panelu oraz dołączonych narzędzi w czystym profilu Windows CI. Testy z atrapami integracji nie zastępują logowania na rzeczywistym koncie i próby płatnego retuszu.
+
+Zakres testów, konfiguracja i ograniczenia znajdują się w [opisie wydania oraz załączonej instrukcji](https://github.com/Talent620/Sterownik-Studio/releases/tag/v1.9.4). Wersje historyczne pozostają dostępne w [Releases](https://github.com/Talent620/Sterownik-Studio/releases).
